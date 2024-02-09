@@ -11,6 +11,7 @@ import {
   Dimensions,
   View
 } from 'react-native';
+import { SimpleLineIcons } from '@expo/vector-icons';
 import { signOut } from 'firebase/auth';
 
 
@@ -72,9 +73,9 @@ const NotificationScreen = ({ navigation, route }) => {
 
   return (
     <Fragment>
-      <SafeAreaView style={{ flex: 0, backgroundColor: '#FAF8E7' }} />
-      <View style={{ backgroundColor: '#FF6C77', flex: 1, alignItems: 'center' }}>
-        <Image source={require('../assets/Noti_hero.jpg')} style={{ width: imageWidth, height: 270, marginBottom: 30, marginTop: 0 }} />
+      <SafeAreaView style={{ flex: 0, backgroundColor: '#E2E2E2' }} />
+      <View style={{ backgroundColor: '#E2E2E2', flex: 1, alignItems: 'center' }}>
+        <Text style={{ marginVertical: 20, fontWeight: '800' }} >Notification</Text>
 
         {/* {(notiUsers.length > 0)? */}
 
@@ -114,21 +115,10 @@ const NotificationScreen = ({ navigation, route }) => {
         {/* </View> */}
       </View>
       <TouchableOpacity
-        activeOpacity={0.7}
+        // activeOpacity={0.7}
         onPress={signOutNow}
         style={styles.touchableOpacityStyle}>
-        <Image
-          //We are making FAB using TouchableOpacity with an image
-          //We are using online image here
-          // source={{
-          //   uri:
-          //     'https://raw.githubusercontent.com/AboutReact/sampleresource/master/plus_icon.png',
-          // }}
-          //You can use you project image Example below
-          source={require('../assets/logout.png')}
-          style={styles.floatingButtonStyle}
-        />
-        {/* <MaterialIcons name="explore" style={styles.floatingButtonStyle} /> */}
+        <SimpleLineIcons name="logout" color="#DE1914" fill="#DE1914" size={42} style={styles.floatingButtonStyle} />
       </TouchableOpacity>
     </Fragment>
 

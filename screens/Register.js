@@ -52,9 +52,9 @@ const Register = ({ navigation }) => {
 
     return (
         <Fragment>
-            <SafeAreaView style={{ flex: 0, backgroundColor: '#FFFFFF' }} />
+            <SafeAreaView style={{ flex: 0, backgroundColor: '#3D3D3D' }} />
             <View style={styles.container}>
-                <Image source={require('../assets/joinus.jpg')} style={{ width: imageWidth, height: 270, marginBottom: 30 }} />
+                <Image source={require('../assets/hero.png')} style={{ width: imageWidth, height: 300, marginBottom: 30 }} />
 
                 <View style={styles.smallScreen}>
                     <Input
@@ -83,7 +83,7 @@ const Register = ({ navigation }) => {
                             }
                             }
                             style={{
-                                backgroundColor: '#A8A8A8',
+                                backgroundColor: '#3D3D3D',
                                 paddingHorizontal: 5,
                                 paddingVertical: 10,
                                 width: '50%',
@@ -109,7 +109,7 @@ const Register = ({ navigation }) => {
                         }
                         }
                         style={{
-                            backgroundColor: '#4E50F7',
+                            backgroundColor: '#DE1914',
                             paddingHorizontal: 5,
                             paddingVertical: 10,
                             width: '70%', borderRadius: 15,
@@ -125,7 +125,7 @@ const Register = ({ navigation }) => {
                         }
                         }
                         style={{
-                            backgroundColor: '#414242',
+                            backgroundColor: '#3D3D3D',
                             paddingHorizontal: 5,
                             paddingVertical: 10,
                             width: '70%', borderRadius: 15,
@@ -144,7 +144,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        backgroundColor: '#7766F2'
+        backgroundColor: '#3D3D3D'
     },
     button: {
         width: 370,

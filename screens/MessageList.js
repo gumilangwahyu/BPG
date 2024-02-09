@@ -97,11 +97,11 @@ const MessageScreen = ({ navigation, route }) => {
 
   return (
     <Fragment>
-      <SafeAreaView style={{ flex: 0, backgroundColor: '#F8AF00' }} />
-      <View style={{ backgroundColor: '#F8B000', flex: 1, alignItems: 'center' }}>
-        <Image source={require('../assets/chat_hero.jpg')} style={{ width: imageWidth, height: 270, marginBottom: 15, marginTop: 0 }} />
+      <SafeAreaView style={{ flex: 0, backgroundColor: '#E2E2E2' }} />
+      <View style={{ backgroundColor: '#E2E2E2', flex: 1, alignItems: 'center' }}>
+        <Text style={{ marginVertical: 20, fontWeight: '800' }} >Chat your friend</Text>
 
-        <View>
+        <View style={{ marginTop: 15 }}>
           <FlatList
             data={notiUsers}
             //   keyExtractor={(item)=>item.uid}

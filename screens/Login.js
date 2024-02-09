@@ -33,7 +33,7 @@ const Login = ({ navigation }) => {
 
     return (
         <View style={styles.container}>
-            <Image source={require('../assets/hero.jpg')} style={{ width: imageWidth, height: 270, marginBottom: 30 }} />
+            <Image source={require('../assets/hero.png')} style={{ width: imageWidth, height: 300, marginBottom: 30 }} />
 
             <View style={styles.smallScreen}>
                 <Input
@@ -57,7 +57,7 @@ const Login = ({ navigation }) => {
                     }
                     }
                     style={{
-                        backgroundColor: '#414242',
+                        backgroundColor: '#3D3D3D',
                         paddingHorizontal: 5,
                         paddingVertical: 10,
                         width: '70%', borderRadius: 15,
@@ -74,7 +74,7 @@ const Login = ({ navigation }) => {
                     }
                     }
                     style={{
-                        backgroundColor: '#4E50F7',
+                        backgroundColor: '#DE1914',
                         paddingHorizontal: 5,
                         paddingVertical: 10,
                         width: '70%', borderRadius: 15,
@@ -91,12 +91,12 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        backgroundColor: '#4E50F7'
+        backgroundColor: '#3D3D3D'
     },
     button: {
         width: 0.7 * Dimensions.get('window').width,
         marginTop: 10,
-        // color: '#4E50F7'
+        // color: '#DE1914'
     },
     smallScreen: {
         width: 0.9 * Dimensions.get('window').width,
@@ -106,8 +106,8 @@ const styles = StyleSheet.create({
         padding: 20,
         alignItems: 'center',
         borderRadius: 4,
-        borderTopLeftRadius: 40,
-        borderTopRightRadius: 40,
+        borderTopLeftRadius: 32,
+        borderTopRightRadius: 32,
 
     }
 });
