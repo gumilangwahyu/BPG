@@ -1,14 +1,14 @@
 // import * as React from 'react';
 import React, { useCallback, useState, useLayoutEffect, useEffect } from 'react';
 import { Text, View, TouchableOpacity, Avatar, StyleSheet } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MessageScreen from './MessageList';
+import GamesScreen from './Games';
 import { signOut } from 'firebase/auth';
 import { auth } from '../firebase';
 import NotificationScreen from './Notification';
 import ExploreScreen from './Explore';
-import { MaterialCommunityIcons, MaterialIcons, Ionicons } from '@expo/vector-icons';
+import { MaterialCommunityIcons, MaterialIcons, Ionicons, FontAwesome } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
 
@@ -41,10 +41,10 @@ export default function MyTabs({ route, navigation }) {
   return (
     <Tab.Navigator initialRouteName='ExploreScreen'
       screenOptions={{
-        tabBarActiveTintColor: '#FF6B76',
+        tabBarActiveTintColor: '#DE1914',
         tabBarStyle: {
-          backgroundColor: '#373838',
-          padding: 10
+          backgroundColor: '#3D3D3D',
+          padding: 1
         },
 
       }}
@@ -66,6 +66,15 @@ export default function MyTabs({ route, navigation }) {
           tabBarLabel: 'Chat',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="chatbubbles-sharp" color={color} size={size} />
+          ),
+        })} />
+      <Tab.Screen name="GamesScreen" component={GamesScreen} initialParams={{ user_id: user }}
+        options={() => ({
+          headerBackVisible: false,
+          headerShown: false,
+          tabBarLabel: 'Games',
+          tabBarIcon: ({ color, size }) => (
+            <FontAwesome name="gamepad" size={size} color={color} />
           ),
         })} />
       <Tab.Screen name="NotificationScreen" component={NotificationScreen} initialParams={{ user_id: user }}

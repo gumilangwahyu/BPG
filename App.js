@@ -6,6 +6,7 @@ import Login from './screens/Login';
 import Register from './screens/Register';
 import Chat from './screens/Chat';
 import MessageScreen from './screens/MessageList';
+import GamesScreen from './screens/Games';
 import MyTabs from './screens/TabBar';
 
 
@@ -27,7 +28,7 @@ export default function App() {
         <Stack.Screen name='Chat' component={Chat} options={
           ({ route }) => ({
             title: route.params.name, headerStyle: {
-              backgroundColor: '#f4511e',
+              backgroundColor: '#DE1914',
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
@@ -36,6 +37,10 @@ export default function App() {
           })
         } />
         <Stack.Screen name='Messages' component={MessageScreen} options={() => ({
+          headerBackVisible: false,
+          headerShown: false,
+        })} />
+        <Stack.Screen name='Games' component={GamesScreen} options={() => ({
           headerBackVisible: false,
           headerShown: false,
         })} />

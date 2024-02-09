@@ -14,8 +14,6 @@ import {
 } from 'react-native';
 import { SwipeListView } from 'react-native-swipe-list-view';
 
-
-
 const ExploreScreen = ({ navigation, route }) => {
     const [users, setUsers] = useState([])
     const [realFriend, setRealFriend] = useState([])
@@ -38,11 +36,8 @@ const ExploreScreen = ({ navigation, route }) => {
                 setUsers(contactDetails);
             })
         }
-
-
         getUserContacts()
     }, [navigation])
-
 
     const closeRow = (rowMap, rowKey) => {
         console.log(rowKey);
@@ -71,11 +66,10 @@ const ExploreScreen = ({ navigation, route }) => {
 
     return (
         <Fragment>
-            <SafeAreaView style={{ flex: 0, backgroundColor: '#FFFFFF' }} />
+            <SafeAreaView style={{ flex: 0, backgroundColor: '#E2E2E2' }} />
             {/* <SafeAreaView style={{flex: 1 }}> */}
-            <View style={{ backgroundColor: '#E5EAFD', flex: 1, alignItems: 'center' }}>
-                <Image source={require('../assets/Explore_hero.jpg')} style={{ width: imageWidth, height: 270, marginBottom: 15, marginTop: 0 }} />
-                <Text style={{ marginVertical: 20, fontWeight: '800' }} >SWIPE to find who is your FRIEND</Text>
+            <View style={{ backgroundColor: '#E2E2E2', flex: 1, alignItems: 'center' }}>
+                <Text style={{ marginVertical: 20, fontWeight: '800' }} >Swipe to find a friend</Text>
 
                 <View style={styles.container}>
                     <SwipeListView
@@ -120,7 +114,7 @@ const ExploreScreen = ({ navigation, route }) => {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#E5EAFD',
+        backgroundColor: '#E2E2E2',
         flex: 1,
         width: '90%'
 
@@ -161,13 +155,13 @@ const styles = StyleSheet.create({
 
     },
     backRightBtnLeft: {
-        backgroundColor: '#AE64F3',
+        backgroundColor: '#DE1914',
         right: 0,
         borderBottomRightRadius: 10,
         borderTopRightRadius: 10
     },
     backLeftBtn: {
-        backgroundColor: '#F4B1BA',
+        backgroundColor: '#3D3D3D',
         left: 0,
         borderBottomLeftRadius: 10,
         borderTopLeftRadius: 10

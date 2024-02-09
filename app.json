@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "BPG_V1",
-    "slug": "BPG_V1",
+    "name": "BPG-V1",
+    "slug": "bpg-v1",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -9,26 +9,28 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#FFFFFF"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.gumilangwahyu.BPG_V1"
+      "bundleIdentifier": "com.gumilangwahyu.BPG-V1"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#FFFFFF"
       },
-      "package": "com.gumilangwahyu.Chat1"
+      "package": "com.gumilangwahyu.bpgv1"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/hero.png"
     },
     "extra": {
       "eas": {
-        "projectId": "f63aa4b1-ffb7-4519-a98e-c3f1f746c0fc"
+        "projectId": "3ce3e100-659a-47a3-b92f-a26d52660dcd"
       }
     },
     "runtimeVersion": {

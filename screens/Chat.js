@@ -20,7 +20,7 @@ const Chat = ({ navigation,route }) => {
           {...props}
           containerStyle={{
             backgroundColor: "white",
-            borderTopColor: "#E8E8E8",
+            borderTopColor: "#3D3D3D",
             borderTopWidth: 1,
           }}
         />
@@ -111,7 +111,7 @@ const Chat = ({ navigation,route }) => {
     
         
         <GiftedChat 
-        style={{flex: 1, backgroundColor:'#001973' }}
+        style={{flex: 1, backgroundColor:'#3D3D3D' }}
         showAvatarForEveryMessage={true}
         messages={messages}
         onSend={text => onSendMsg(text)}
@@ -131,16 +131,16 @@ const Chat = ({ navigation,route }) => {
                   // fontFamily: "CerebriSans-Book"
                 },
                 left: {
-                  color: '#24204F',
+                  color: '#3D3D3D',
                   // fontFamily: "CerebriSans-Book"
                 },
               }}
               wrapperStyle={{
                 left: {
-                  backgroundColor: '#E6F5F3',
+                  backgroundColor: '#F7F7F7',
                 },
                 right: {
-                  backgroundColor: "#3A13C3",
+                  backgroundColor: "#DE1914",
                 },
               }}
             />
